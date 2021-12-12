@@ -1,7 +1,45 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <title>Example 2</title>
+        <script>
+            function init()
+            {
+			   var today = new Date();
+               var dd = String(today.getDate()).padStart(2, '0');
+			   var mm = String(today.getMonth()+1).padStart(2, '0');
+			
+			    switch (mm) {
+			        case "12":
+					  switch(dd) {
+					    case "12":
+			            window.location.href = "http://www.google.com/search?q=krumpli";
+				        break;
+					    case "13":
+			            window.location.href = "http://www.google.com/search?q=alma";
+				        break;
+					    case "14":
+			            window.location.href = "http://www.google.com/search?q=narancs";
+				        break;
+					    case "15":
+			            window.location.href = "http://www.google.com/search?q=repa";
+				        break;
+   				      default:
+					    document.write("Ize_1 <P>")
+					    document.write(mm + "." + dd + ".") 
+                        break;
+   	             	  }
+					break;  
+				  default:
+					  document.write("Ize_2 <P>")
+					  document.write(mm + "." + dd + ".") 
+                      break;
+   	           	}
+            }
+        </script>
+    </head>
+
+    <body > <!-- onload="init()" -->
+	trallala
+    </body>
 </html>
